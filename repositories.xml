@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "https://www.gentoo.org/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+	<repo quality="experimental" status="unofficial">
+		<name>xoreos</name>
+		<description lang="en">xoreos overlay</description>
+		<homepage>https://xoreos.org/</homepage>
+		<owner type="project">
+			<email>xoreos-devel@xoreos.org</email>
+			<name>The xoreos Team</name>
+		</owner>
+		<source type="git">https://github.com/xoreos/gentoo-overlay.git</source>
+		<source type="git">git+ssh://git@github.com/xoreos/gentoo-overlay.git</source>
+		<feed>https://github.com/xoreos/gentoo-overlay/commits/master.atom</feed>
+	</repo>
+</repositories>
