@@ -1,0 +1,18 @@
+diff -ur phaethon-0.0.4-orig/configure.ac phaethon-0.0.4/configure.ac
+--- phaethon-0.0.4-orig/configure.ac	2018-06-29 14:48:12.205763014 +0200
++++ phaethon-0.0.4/configure.ac	2018-06-29 14:48:36.792565380 +0200
+@@ -89,12 +89,12 @@
+ AC_ARG_WITH([std], [AS_HELP_STRING([--without-std], [Compile without specifying the C/C++ standard to follow @<:@default=no@:>@])], [], [with_std=yes])
+ 
+ dnl C/C++ dialect
+-if test "x$with_warnings" = "xno"; then
++if test "x$with_std" = "xno"; then
+ 	STD_C=""
+ 	STD_CXX""
+ else
+ 	AX_CHECK_COMPILER_FLAGS_VAR([C], [STD_C], [-std=c99])
+-	AX_CHECK_COMPILER_FLAGS_VAR([C++], [STD_CXX], [-std=c++03])
++	AX_CHECK_COMPILER_FLAGS_VAR([C++], [STD_CXX], [-std=c++11])
+ fi
+ 
+ AC_SUBST(STD_C)

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>drmccoy@xoreos.org</email>
+		<name>Sven "DrMcCoy" Hesse</name>
+	</maintainer>
+	<use>
+		<flag name="lto">Compile with link-time optimization</flag>
+	</use>
+	<upstream>
+		<remote-id type="github">xoreos/phaethon</remote-id>
+	</upstream>
+	<longdescription lang="en">
+		Phaethon is a graphical resource explorer able to examine the
+		resources found in the BioWare Aurora games.
+	</longdescription>
+</pkgmetadata>
