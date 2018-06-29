@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>drmccoy@xoreos.org</email>
+		<name>Sven "DrMcCoy" Hesse</name>
+	</maintainer>
+	<use>
+		<flag name="lto">Compile with link-time optimization</flag>
+		<flag name="faad">Enable AAC audio decoding library support via media-libs/faad2</flag>
+	</use>
+	<upstream>
+		<remote-id type="github">xoreos/xoreos</remote-id>
+	</upstream>
+	<longdescription lang="en">
+		xoreos is an open source implementation of BioWare's Aurora engine and its
+		derivatives, licensed under the terms of the GNU General Public License
+		version 3 (or later). The goal is to have all games using this engines
+		working in a portable manner, starting from Neverwinter Nights and ending
+		with Dragon Age II.
+	</longdescription>
+</pkgmetadata>
