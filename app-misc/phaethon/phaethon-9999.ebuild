@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -19,7 +19,7 @@ RDEPEND="
 	virtual/libiconv
 	>=sys-libs/zlib-1.2.3
 	>=app-arch/xz-utils-5.0.3
-	>=dev-libs/boost-1.53.0[threads]
+	>=dev-libs/boost-1.53.0
 	>=dev-qt/qtcore-5.7.1
 	>=dev-qt/qtgui-5.7.1
 	>=dev-qt/qtwidgets-5.7.1
