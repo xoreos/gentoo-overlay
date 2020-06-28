@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -12,7 +12,7 @@ EGIT_REPO_URI="https://github.com/${PN}/${PN}.git"
 LICENSE="GPL-3+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="lto vorbis mad faad xvid"
+IUSE="lto vorbis mad faad xvid vpx"
 
 RDEPEND="
 	virtual/libiconv
@@ -30,6 +30,7 @@ RDEPEND="
 	vorbis? ( >=media-libs/libvorbis-1.3.1 )
 	faad? ( >=media-libs/faad2-2.7 )
 	xvid? ( >=media-libs/xvid-1.2.2 )
+	vpx? ( >=media-libs/libvpx-1.6.0 )
 "
 DEPEND="
 	${RDEPEND}
@@ -52,5 +53,6 @@ src_configure() {
 		$(use_enable mad) \
 		$(use_enable faad) \
 		$(use_enable xvid xvidcore) \
+		$(use_enable vpx) \
 		--with-release=xGentoo
 }

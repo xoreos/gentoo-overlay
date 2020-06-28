@@ -8,6 +8,7 @@
 	<use>
 		<flag name="lto">Compile with link-time optimization</flag>
 		<flag name="faad">Enable AAC audio decoding library support via media-libs/faad2</flag>
+		<flag name="vpx">Enable VP8/VP9 codec support via media-libs/libvpx</flag>
 	</use>
 	<upstream>
 		<remote-id type="github">xoreos/xoreos</remote-id>
