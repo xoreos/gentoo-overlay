@@ -22,7 +22,7 @@ RDEPEND="
 	>=dev-libs/boost-1.53.0
 	virtual/opengl
 	>=media-libs/glew-1.13.0:0
-	>=media-libs/libsdl2-2.0.0
+	>=media-libs/libsdl2-2.0.4
 	>=media-libs/freetype-2.4.0
 	>=media-libs/openal-1.12
 	mad? ( >=media-libs/libmad-0.15.1b )
