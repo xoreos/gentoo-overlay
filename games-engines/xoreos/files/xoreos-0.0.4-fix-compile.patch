@@ -1,0 +1,18 @@
+diff -ur xoreos-0.0.4-orig/configure.ac xoreos-0.0.4/configure.ac
+--- xoreos-0.0.4-orig/configure.ac	2021-05-13 18:58:56.410879524 +0200
++++ xoreos-0.0.4/configure.ac	2021-05-13 19:00:51.954316262 +0200
+@@ -86,12 +86,12 @@
+ AC_ARG_WITH([std], [AS_HELP_STRING([--without-std], [Compile without specifying the C/C++ standard to follow @<:@default=no@:>@])], [], [with_std=yes])
+ 
+ dnl C/C++ dialect
+-if test "x$with_warnings" = "xno"; then
++if test "x$with_std" = "xno"; then
+ 	STD_C=""
+ 	STD_CXX""
+ else
+ 	AX_CHECK_COMPILER_FLAGS_VAR([C], [STD_C], [-std=c99])
+-	AX_CHECK_COMPILER_FLAGS_VAR([C++], [STD_CXX], [-std=c++03])
++	AX_CHECK_COMPILER_FLAGS_VAR([C++], [STD_CXX], [-std=c++11])
+ fi
+ 
+ AC_SUBST(STD_C)

@@ -1,7 +1,7 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 DESCRIPTION="A reimplementation of BioWare's Aurora engine"
 HOMEPAGE="https://xoreos.org/"
@@ -12,6 +12,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="lto vorbis mad faad xvid"
 
+BDEPEND="
+	virtual/pkgconfig
+"
 RDEPEND="
 	virtual/libiconv
 	>=sys-libs/zlib-1.2.3
@@ -31,7 +34,6 @@ RDEPEND="
 "
 DEPEND="
 	${RDEPEND}
-	virtual/pkgconfig
 "
 
 src_configure() {
